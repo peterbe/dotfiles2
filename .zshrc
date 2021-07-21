@@ -130,8 +130,8 @@ alias gpom="git pull origin main"
 alias gcb="git co -b"
 alias grom="git rebase origin main"
 
-if which nodenv; then
-  eval "$(nodenv init -)"
-fi
 
-export PATH="/usr/local/sbin:$HOME/workspace/gh-helper-cli/exe:$PATH"
+
+export PATH="/usr/local/sbin:$HOME/workspace/gh-helper-cli/exe:$HOME/.nodenv/bin:$PATH"
+
+eval "$(nodenv init -)"
