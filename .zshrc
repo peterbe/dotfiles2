@@ -132,6 +132,6 @@ alias grom="git rebase origin main"
 
 
 
-export PATH="/usr/local/sbin:$HOME/workspace/gh-helper-cli/exe:$HOME/.nodenv/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
-eval "$(nodenv init -)"
+
