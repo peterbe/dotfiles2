@@ -11,3 +11,10 @@ ln -s $(pwd)/emacs $HOME/.emacs
 ln -s $(pwd)/screenrc $HOME/.screenrc
 
 vim -Es -u $HOME/.vimrc -c "PlugInstall | qa"
+
+# Oh My Zsh!
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+cp -f .zshrc $HOME
+
