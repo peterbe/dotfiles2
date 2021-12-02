@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 exec > >(tee -i $HOME/dotfiles_install.log)
 exec 2>&1
