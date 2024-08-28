@@ -21,3 +21,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 cp -f $(pwd)/.zshrc $HOME
 source "$HOME/.zshrc"
+
+
+echo 'dummy.*' >> .git/info/exclude
