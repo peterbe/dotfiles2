@@ -131,6 +131,7 @@ alias gpom="git pull origin main"
 alias gcb="git co -b"
 alias grom="git rebase origin main"
 alias gst='git status'
-alias gcam='git commit -a -S -m'
+#alias gcam='git commit -a -S -m'
+alias gcam='git commit -a -m'
 
 export PATH="/usr/local/sbin:$PATH"
