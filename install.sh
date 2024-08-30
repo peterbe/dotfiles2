@@ -17,10 +17,12 @@ fi
 
 cat $(pwd)/.gitconfig >> "$HOME/.gitconfig"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 cp -f $(pwd)/.zshrc $HOME
 source "$HOME/.zshrc"
 
 
-echo 'dummy.*' >> .git/info/exclude
+if [[ -d /workspaces/github && -d /workspaces/github/.git/info/exclude ]]; then
+    echo 'dummy.*' >> /workspaces/github/.git/info/exclude
+fi
