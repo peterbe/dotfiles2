@@ -4,7 +4,7 @@ This repo is a starting point for using custom dotfiles (terminal / editor confi
 
 ## How to use this repo
 
-In order to use this template, 
+In order to use this template,
 
 1. [create a new repo from this template](https://github.com/github/codespaces-dotfiles-template/generate). Make it public and name it `dotfiles`.
 1. Edit the files that you want to customize in `tmux.conf`, `vimrc`, etc.
@@ -22,7 +22,3 @@ This supports the following tools:
 * Screen
 * Vim
 * Emacs
-
-## Vim Plugins
-
-This repo uses the wonderful [Vim Plug](https://github.com/junegunn/vim-plug) tool to manage vim plugins. If you'd like to add plugins, simply add them between the opening and closing plug statements in the `vimrc` file.
