@@ -25,7 +25,7 @@ ZSH_THEME="avit"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
@@ -133,5 +133,6 @@ alias grom="git rebase origin main"
 alias gst='git status'
 #alias gcam='git commit -a -S -m'
 alias gcam='git commit -a -m'
+alias Gcm='git checkout master'
 
 export PATH="/usr/local/sbin:$PATH"
