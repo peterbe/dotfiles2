@@ -134,5 +134,6 @@ alias gst='git status'
 #alias gcam='git commit -a -S -m'
 alias gcam='git commit -a -m'
 alias Gcm='git checkout master'
+alias mastermerge='git fetch origin master && git merge origin/master'
 
 export PATH="/usr/local/sbin:$PATH"
