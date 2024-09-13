@@ -135,5 +135,6 @@ alias gst='git status'
 alias gcam='git commit -a -m'
 alias Gcm='git checkout master'
 alias mastermerge='git fetch origin master && git merge origin/master'
+alias start-server-with-tee-logs='./script/server | tee /tmp/log.log'
 
 export PATH="/usr/local/sbin:$PATH"
