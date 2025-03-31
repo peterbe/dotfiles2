@@ -135,8 +135,8 @@ alias gst='git status'
 alias gcam='git commit -a -m'
 alias Gcm='git checkout master'
 alias mastermerge='git fetch origin master && git merge origin/master'
-alias start-server-with-tee-logs='./script/server | tee /tmp/log.log'
-alias start-server-with-vite-with-tee-logs='VITE=1 ./script/server | tee /tmp/log.log'
+alias start-server-with-tee-logs='SKIP_LOOKBOOK=1 ./script/server | tee /tmp/log.log'
+alias start-server-with-vite-with-tee-logs='SKIP_LOOKBOOK=1 VITE=1 ./script/server | tee /tmp/log.log'
 alias enable-sandbox='bin/toggle-feature-flag enable react_sandbox'
 
 export PATH="/usr/local/sbin:$PATH"
